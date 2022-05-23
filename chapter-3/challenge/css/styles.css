@@ -31,6 +31,11 @@ h3 {
 }
 
 /* Utils */
+.half-opacity {
+    opacity: 0.5;
+}
+
+/* ini ternyata ada di bootstrap semua tapi saya males refactornya xixi */
 .row {
     display: flex;
     flex-direction: row;
@@ -193,7 +198,42 @@ tr h3 {
     color: rgba(255, 255, 255, 0.5);
 }
 
-.date {
+.caption {
     font-size: 0.875rem;
     color: rgba(255, 255, 255, 0.5);
+}
+
+/*Newsletter Section*/
+#newsletter {
+    background-image: url("/chapter-3/challenge/assets/newsletter.png");
+}
+
+form {
+    margin-left: 0;
+}
+
+.form-group {
+    border: none;
+    background-color: rgba(40, 40, 40);
+    padding-bottom: 16px;
+    border-radius: 10px;
+}
+
+.form-field {
+    border: none;
+    background-color: rgba(40, 40, 40);
+}
+
+/*Footer*/
+footer {
+    padding: 2rem 4rem;
+    background-color: #080A0B;
+}
+
+a.navigation {
+    color: white;
+}
+
+.divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
 }

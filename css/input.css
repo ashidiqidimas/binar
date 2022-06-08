@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .chosen {
+        background-color: #C4C4C4;
+        border-radius: 1rem;
+    }
+}

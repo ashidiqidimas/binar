@@ -85,7 +85,7 @@ nav a {
 header {
     width: 100vw;
     height: 100vh;
-    background-image: url("/chapter-3/challenge/assets/main-bg.jpg");
+    background-image: url("../assets/main-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -121,7 +121,7 @@ section {
 
 /*The Game Section*/
 #the-game {
-    background-image: url("/chapter-3/challenge/assets/the-games-bg.jpg");
+    background-image: url("../assets/the-games-bg.jpg");
 }
 
 #the-game div {
@@ -134,7 +134,7 @@ section {
 }
 
 .carousel-img {
-    background-image: url("/chapter-3/challenge/assets/rockpaperstrategy-1600.jpg");
+    background-image: url("../assets/rockpaperstrategy-1600.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -142,7 +142,7 @@ section {
 
 /*Features Section*/
 #features {
-    background-image: url("/chapter-3/challenge/assets/features.jpg");
+    background-image: url("../assets/features.jpg");
 }
 
 #features div {
@@ -161,7 +161,7 @@ section {
 
 /*Requirements*/
 #requirements {
-    background-image: url("/chapter-3/challenge/assets/requirements.png");
+    background-image: url("../assets/requirements.png");
 }
 
 table {
@@ -174,7 +174,7 @@ tr h3 {
 
 /*Reviews Section*/
 #reviews {
-    background-image: url("/chapter-3/challenge/assets/top-score-bg.png");
+    background-image: url("../assets/top-score-bg.png");
 }
 
 .review-card {
@@ -205,7 +205,7 @@ tr h3 {
 
 /*Newsletter Section*/
 #newsletter {
-    background-image: url("/chapter-3/challenge/assets/newsletter.png");
+    background-image: url("../assets/newsletter.png");
 }
 
 form {

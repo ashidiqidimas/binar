@@ -10,12 +10,12 @@ function chooseShapeCallback(userChosenShapeID) {
   // Just in case the user play again without click restart button first
   restartCallback();
 
-  const computerChosenShapeID = computer.getShape();
-  computer.updateShape(computerChosenShapeID);
-
   human.updateShape(userChosenShapeID);
 
-  const resultID = game.play(userChosenShapeID, computerChosenShapeID);
+  const computerChosenShapeID = computer.getShapeID();
+  computer.updateShape(computerChosenShapeID);
+
+  const resultID = game.getResultID(userChosenShapeID, computerChosenShapeID);
   game.updateGame(resultID);
 }
 

@@ -8,7 +8,7 @@ class Computer extends Player {
    * @return string the id for the chosen shape's element
    * @public
    */
-  getShape() {
+  getShapeID() {
     // use this._shapes.length for random length just in case
     // we will add new shapes in the future aka rock scissor paper+
     const randomIndex = Math.floor(Math.random() * this._shapes.length);

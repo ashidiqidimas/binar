@@ -1,4 +1,10 @@
 class Game {
+
+  /**
+   * A map that holds all possible result for the game
+   * @type { Object.<string, string> }
+   * @private
+   */
   _results = {
     'human-rock_computer-rock': 'draw',
     'human-scissor_computer-scissor': 'draw',
@@ -11,7 +17,12 @@ class Game {
     'human-paper_computer-scissor': 'computer-win',
   };
 
-  play(userChosenShapeID, computerChosenShapeID) {
+  /**
+   * @param userChosenShapeID
+   * @param computerChosenShapeID
+   * @return { string } - The HTMl ID for the result card element
+   */
+  getResultID(userChosenShapeID, computerChosenShapeID) {
     const key = userChosenShapeID + '_' + computerChosenShapeID;
     const resultID = this._results[key];
 
@@ -20,6 +31,11 @@ class Game {
     return resultID;
   }
 
+  /**
+   * Update the game elements according to the resultID
+   * @param resultID
+   * @type { resultID : string }
+   */
   updateGame(resultID) {
     const vsElement = document.getElementById("vs");
     vsElement.classList.add("hidden");
@@ -35,6 +51,10 @@ class Game {
     console.log(resultCardElement);
   }
 
+  /**
+   * Restart game elements like "vs" text, "draw card",
+   * "human win" card, and "computer win" card
+   */
   restart() {
     const vsElement = document.getElementById("vs");
     vsElement.classList.remove("hidden");
@@ -56,18 +76,25 @@ class Game {
       cardElement.classList.add("hidden");
   }
 
-  _logFormattedResult(result) {
+  /**
+   * Format the result to be capitalized at the first character, replace "-" with " ",
+   * and add a suffix string according to the resultID
+   * @param resultID
+   * @type { resultID : string }
+   * @private
+   */
+  _logFormattedResult(resultID) {
     let formattedResult;
 
-    formattedResult = result.charAt(0).toUpperCase() + result.slice(1);
+    formattedResult = resultID.charAt(0).toUpperCase() + resultID.slice(1);
 
-    if (result.includes("-")) {
+    if (resultID.includes("-")) {
       formattedResult = formattedResult.replace("-", " ");
     }
 
-    if (result === "human-win") {
+    if (resultID === "human-win") {
       formattedResult = formattedResult.concat(". Congratulation!");
-    } else if (result === "computer-win") {
+    } else if (resultID === "computer-win") {
       formattedResult = formattedResult.concat(" :(");
     }
 

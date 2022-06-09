@@ -1,6 +1,7 @@
 import Player from './player.js';
 
 class Human extends Player {
+
   constructor() {
     super();
     this._getButtons();
@@ -31,6 +32,7 @@ class Human extends Player {
   }
 
   /**
+   * A utility function to query all shape buttons
    * @private
    */
   _getButtons() {

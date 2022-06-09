@@ -1,4 +1,11 @@
 class Player {
+
+  /**
+   * An array that contains all shapes in the game
+   *
+   * @type {string[]}
+   * @private
+   */
   _shapes = [
     'rock',
     'scissor',
@@ -17,6 +24,12 @@ class Player {
     chosenElement.classList.add("chosen");
   }
 
+  /**
+   * Restart shapes element (remove "chosen card" effect) for the given type
+   *
+   * @param type
+   * @type { type : string }
+   */
   restart(type) {
     const computerRock = document.getElementById(`${type}-rock`);
     if (computerRock.classList.contains("chosen")) {

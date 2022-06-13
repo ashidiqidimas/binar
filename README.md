@@ -4,9 +4,9 @@ This folder contains all my solutions for Binar Academy's challenges
 ## Chapter 4 (Rock Paper Scissors)
 
 ### Links
-[Directly to the game](./chapter-4/challenge/index.html)  
+[Directly to the game](https://ashidiqidimas.github.io/binar/chapter-4/challenge/index.html)  
 [Source Code](https://github.com/ashidiqidimas/binar/tree/master/chapter-4)  
-[Landing Page](./chapter-3/challenge/index.html)
+[Landing Page](https://ashidiqidimas.github.io/binar/chapter-3/challenge/index.html)
 
 ### Tech Stacks
 - [Tailwind CSS](https://tailwindcss.com)
